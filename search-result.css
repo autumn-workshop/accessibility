@@ -1,0 +1,71 @@
+.search-result {
+    margin: 3.6rem auto ;
+    overflow-x: hidden;
+}
+
+.search-result_title {
+    font-size:2.4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.hotel-list {
+    display:flex;
+    overflow-x:scroll;
+    grid-gap: 1.6rem;
+    gap:1.6rem;
+    margin: 0 4rem;
+    padding: 1.2rem 4rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    list-style:none;
+}
+
+.hotel {
+    width:40%;
+    background-color:#ffffff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hotel button {
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.hotel img {
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.hotel-info {
+    padding: 10px;
+    text-align: left;
+}
+
+.other-search{
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.other-search a {
+    display:inline-flex;
+    align-items: center;
+    grid-gap: 0.4rem;
+    gap: 0.4rem;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (min-width: 76rem){
+    .hotel {
+        width:100%;
+    }
+}

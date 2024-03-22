@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Autumn Hotel | 日本中のホテル料金を比較 &amp; 格安予約</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="search-result.css">
+
+</head>
+
+<body>
+
+    <!-- headerセクション -->
+    <div>
+        <div class="wrapper">
+            <header itemscope itemtype="http://schema.org/WPHeader" class="Header_header">
+                <a title="autumn hotel logo" aria-label="autumn hotel logo" href="/ja">
+                    <h1 class="Header_header_logo">Autumn Hotel</h1>
+                </a>
+                <nav class="Header_header_nav">
+                    <ul>
+                        <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <div><a tabindex="0" role="link" href="munyamunya">
+                                    <span aria-hidden="true"><img src="img/heart-lined.png" alt="favorite"
+                                            class="Header_header_nav_img"></span>
+                                    <span>
+                                        <p>お気に入り</p>
+                                    </span>
+                                </a></div>
+                        </li>
+                        <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <div><a tabindex="0" role="link" href="munyamunya">
+                                    <span aria-hidden="true"><img src="img/user.png" alt="favorite"
+                                            class="Header_header_nav_img"></span>
+                                    <span>
+                                        <p>ログイン</p>
+                                    </span>
+                                </a></div>
+                        </li>
+                        <li itemscope itemtype="https://schema.org/SiteNavigationElement">
+                            <div><a tabindex="0" role="link" href="munyamunya">
+                                    <span aria-hidden="true"><img src="img/menu-lined.png" alt="favorite"
+                                            class="Header_header_nav_img"></span>
+                                    <span>
+                                        <p>メニュー</p>
+                                    </span>
+                                </a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+
+    <!-- 境界線 -->
+    <div class="border"></div>
+
+    <!-- メインセクション -->
+    <main>
+        <!-- searchセクション -->
+        <section class="wrapper">
+            <!-- searchのタイトルセクション -->
+            <div class="search-title">
+                <div class="search-title_container">
+                    <h1 class="search-title_container_title">1憶のホテルからあなたに最適なホテルをオータムホテルが見つけます</h1>
+                    <h2 class="search-title_container_description">検索結果から、お得な旅を見つけてください。</h2>
+                </div>
+                <div class="search-title_img-container"><img src="img/hotel_bellboy.png" alt="" /></div>
+            </div>
+
+            <!-- searchメインセクション-->
+            <div>
+                <!-- 786px以下のときの3連検索欄 -->
+                <div class="search-form-container">
+                    <form>
+                        <div class="search-form-outline">
+                            <filedset class="search-form">
+                                <div class="search-label"><label id="search-label">旅行先</label></div>
+                                <div>
+                                    <input id="search-input" class="search-input" autocapitalize="off" autocorrect="off"
+                                        aria-labelledby="search-label" aria-invalid="false" placeholder="旅行先"
+                                        enterkeyhint="search" type="text" name="hotel or area name">
+                                </div>
+                                <div class="search-label"><label id="date-select-label">日付を選択</label></div>
+                                <div>
+                                    <select id="date-select" name="date" class="search-input"
+                                        aria-labeledby="date-select-label">
+                                        <option value=""> --選択してください。--</option>
+                                        <option value="3月24日">3月24日</option>
+                                        <option value="3月25日">3月25日</option>
+                                        <option value="3月26日">3月26日</option>
+                                        <option value="3月27日">3月27日</option>
+                                        <option value="3月28日">3月28日</option>
+                                    </select>
+                                </div>
+                                <div class="search-label"><label id="visitor-number-select-label">滞在人数</label></div>
+                                <div>
+                                    <select id="visitor-number-select" name="visitor-number-select" class="search-input"
+                                        aria-labeledby="visitor-number-select-label">
+                                        <option value=""> --選択してください。--</option>
+                                        <option value="1人">1人</option>
+                                        <option value="2人">2人</option>
+                                        <option value="3人">3人</option>
+                                        <option value="4人">4人</option>
+                                        <option value="5人">5人</option>
+                                    </select>
+                            </filedset>
+                            <input type="submit" value="検索" class="search-submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- ホテル一覧結果セクション -->
+        <section class="wrapper">
+            <div class="search-result">
+                <label class="search-result_title">検索結果</label>
+                <ul class="hotel-list">
+                    <li class="hotel">
+                        <button type="button">
+                            <img src="img/cool-hotel-1.jpg" alt="東京都の高級ホテル">
+                            <div class="hotel-info">
+                                <h2>ホテル1</h2>
+                                <p>東京都中央区</p>
+                                <p>1泊￥50,000~</p>
+                            </div>
+                        </button>
+                    </li>
+                    <li class="hotel">
+                        <img src="img/cool-hotel-2.jpg" alt="大阪市中央区のホテル2">
+                        <div class="hotel-info">
+                            <h2>ホテル2</h2>
+                            <p>大阪市中央区</p>
+                            <p>1泊￥15,000~</p>
+                        </div>
+                    </li>
+                    <li class="hotel">
+                        <img src="img/cool-hotel-3.jpg" alt="福岡南区のホテル3">
+                        <div class="hotel-info">
+                            <h2>ホテル3</h2>
+                            <p>福岡南区</p>
+                            <p>1泊￥12,000~</p>
+                        </div>
+                    </li>
+                    <li class="hotel">
+                        <img src="img/cool-hotel-4.jpg" alt="北海道小樽市のホテル4">
+                        <div class="hotel-info">
+                            <h2>ホテル4</h2>
+                            <p>北海道小樽市</p>
+                            <p>1泊￥16,000~</p>
+                        </div>
+                    </li>
+                </ul>
+                <div>
+                    <p><a>その他の宿泊施設を検索　⇒</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
