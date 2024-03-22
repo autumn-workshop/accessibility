@@ -54,6 +54,10 @@
     font-weight: 600;
 }
 
+.search-label span {
+    color:#990000;
+}
+
 .search-input {
     height:3.5rem;
     width: 100%;
