@@ -1,0 +1,46 @@
+.reserve-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.reserve-modal_content {
+    background-color: #F4F4F4;
+    margin: 20% auto;
+    height:15rem;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: 1s;
+}
+.reserve-modal_header {
+    padding-top: 2rem ;
+    display: flex;
+    justify-content: center;
+}
+.reserve-modal_header h1 {
+    margin: 1rem 0;
+}
+.reserve-modal_body {
+    display:flex;
+    justify-content:space-between;
+    padding: 4rem 6rem;;
+    color: black;
+}
+.reserve-modal_body button{
+    width:5rem;
+    font-size:1.4rem;
+}
+@keyframes modalopen {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

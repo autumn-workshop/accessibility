@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="search.css">
     <link rel="stylesheet" href="search-result.css">
-
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="modal.css">
 </head>
 
 <body>
-
     <!-- headerセクション -->
     <div>
         <div class="wrapper">
@@ -27,8 +27,9 @@
                     <ul>
                         <li itemscope itemtype="https://schema.org/SiteNavigationElement">
                             <div><a tabindex="0" role="link" href="munyamunya">
-                                    <span aria-hidden="true"><img src="img/heart-lined.png" alt="favorite"
-                                            class="Header_header_nav_img"></span>
+                                    <span aria-hidden="true">
+                                        <img src="img/heart-lined.png" alt="favorite" class="Header_header_nav_img">
+                                    </span>
                                     <span>
                                         <p>お気に入り</p>
                                     </span>
@@ -41,6 +42,7 @@
                                     <span>
                                         <p>ログイン</p>
                                     </span>
+                                    <span class="Header_header_nav_count"><span>4</span></span>
                                 </a></div>
                         </li>
                         <li itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -57,10 +59,8 @@
             </header>
         </div>
     </div>
-
     <!-- 境界線 -->
     <div class="border"></div>
-
     <!-- メインセクション -->
     <main>
         <!-- searchセクション -->
@@ -73,7 +73,6 @@
                 </div>
                 <div class="search-title_img-container"><img src="img/hotel_bellboy.png" alt="" /></div>
             </div>
-
             <!-- searchメインセクション-->
             <div>
                 <!-- 786px以下のときの3連検索欄 -->
@@ -117,14 +116,26 @@
                 </div>
             </div>
         </section>
-
+        <!-- ホテル予約モーダル -->
+        <dialog id="reserveModal" class="reserve-modal">
+            <div class="reserve-modal_content">
+                <div class="reserve-modal_header">
+                    <h1>このホテルを予約しますか？</h1>
+                </div>
+                <div class="reserve-modal_body">
+                    <button>はい</button>
+                    <button>いいえ</button>
+                </div>
+            </div>
+        </dialog>
+        <script src="main.js"></script>
         <!-- ホテル一覧結果セクション -->
         <section class="wrapper">
             <div class="search-result">
                 <label class="search-result_title">検索結果</label>
                 <ul class="hotel-list">
                     <li class="hotel">
-                        <button type="button">
+                        <button id="reserveHotelModalOpen" type="button">
                             <img src="img/cool-hotel-1.jpg" alt="東京都の高級ホテル">
                             <div class="hotel-info">
                                 <h2>ホテル1</h2>
@@ -134,36 +145,56 @@
                         </button>
                     </li>
                     <li class="hotel">
-                        <img src="img/cool-hotel-2.jpg" alt="大阪市中央区のホテル2">
-                        <div class="hotel-info">
-                            <h2>ホテル2</h2>
-                            <p>大阪市中央区</p>
-                            <p>1泊￥15,000~</p>
-                        </div>
+                        <button type="button">
+                            <img src="img/cool-hotel-2.jpg" alt="大阪市中央区のホテル2">
+                            <div class="hotel-info">
+                                <h2>ホテル2</h2>
+                                <p>大阪市中央区</p>
+                                <p>1泊￥15,000~</p>
+                            </div>
+                        </button>
                     </li>
                     <li class="hotel">
-                        <img src="img/cool-hotel-3.jpg" alt="福岡南区のホテル3">
-                        <div class="hotel-info">
-                            <h2>ホテル3</h2>
-                            <p>福岡南区</p>
-                            <p>1泊￥12,000~</p>
-                        </div>
+                        <button type="button">
+                            <img src="img/cool-hotel-3.jpg" alt="福岡南区のホテル3">
+                            <div class="hotel-info">
+                                <h2>ホテル3</h2>
+                                <p>福岡南区</p>
+                                <p>1泊￥12,000~</p>
+                            </div>
+                        </button>
                     </li>
                     <li class="hotel">
-                        <img src="img/cool-hotel-4.jpg" alt="北海道小樽市のホテル4">
-                        <div class="hotel-info">
-                            <h2>ホテル4</h2>
-                            <p>北海道小樽市</p>
-                            <p>1泊￥16,000~</p>
-                        </div>
+                        <button type="button">
+                            <img src="img/cool-hotel-4.jpg" alt="北海道小樽市のホテル4">
+                            <div class="hotel-info">
+                                <h2>ホテル4</h2>
+                                <p>北海道小樽市</p>
+                                <p>1泊￥16,000~</p>
+                            </div>
+                        </button>
                     </li>
                 </ul>
-                <div>
-                    <p><a>その他の宿泊施設を検索　⇒</a></p>
+                <div class="other-search">
+                    <p><a href="/">その他の宿泊施設を検索 ⇒</a></p>
                 </div>
             </div>
         </section>
+        <nav class="breadcrumb" aria-label="ぱんくずリスト">
+            <ol>
+                <li class="breadcrumb_first">
+                    <a href="/">
+                        <p>ホーム</p>
+                    </a>
+                </li>
+                <li class="breadcrumb_second">
+                    <span>></span>
+                    <p aria-current="page">ホテル検索</p>
+                </li>
+            </ol>
+        </nav>
     </main>
 </body>
+<script src="main.js"></script>
 
 </html>

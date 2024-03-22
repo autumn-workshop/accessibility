@@ -1,0 +1,32 @@
+.breadcrumb {
+    margin: 0  auto 8rem;
+    max-width:78rem;
+    padding: 0 2rem;
+    background-color: #FFFFFF;
+}
+.breadcrumb ol {
+    display:flex;
+    width:100%;
+    gap:1rem;
+    padding: 0 1rem;
+    list-style:none;
+}
+.breadcrumb_first {
+    display: inline;
+    margin-right: 4px;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+.breadcrumb_first a {
+    text-decoration-line: underline;
+}
+.breadcrumb_second {
+    display: flex;
+    margin-right: 4px;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+}
+.breadcrumb_second span {
+    margin-right:1rem;;
+    display:inline;
+}
